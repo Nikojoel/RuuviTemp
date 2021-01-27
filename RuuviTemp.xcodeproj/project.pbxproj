@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23F8F68A25C1831B00BDB8D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */; };
+		23F8F68C25C1831B00BDB8D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */; };
+		23F8F68E25C1831B00BDB8D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68D25C1831B00BDB8D9 /* ViewController.swift */; };
+		23F8F69125C1831B00BDB8D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F8F68F25C1831B00BDB8D9 /* Main.storyboard */; };
+		23F8F69325C1831C00BDB8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F8F69225C1831C00BDB8D9 /* Assets.xcassets */; };
+		23F8F69625C1831C00BDB8D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F8F69425C1831C00BDB8D9 /* LaunchScreen.storyboard */; };
+		23F8F6A125C1831D00BDB8D9 /* RuuviTempTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F6A025C1831D00BDB8D9 /* RuuviTempTests.swift */; };
+		23F8F6AC25C1831D00BDB8D9 /* RuuviTempUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F6AB25C1831D00BDB8D9 /* RuuviTempUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23F8F69D25C1831D00BDB8D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23F8F67E25C1831B00BDB8D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F8F68525C1831B00BDB8D9;
+			remoteInfo = RuuviTemp;
+		};
+		23F8F6A825C1831D00BDB8D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23F8F67E25C1831B00BDB8D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F8F68525C1831B00BDB8D9;
+			remoteInfo = RuuviTemp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23F8F68625C1831B00BDB8D9 /* RuuviTemp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuuviTemp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		23F8F68D25C1831B00BDB8D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23F8F69025C1831B00BDB8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23F8F69225C1831C00BDB8D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F8F69525C1831C00BDB8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23F8F69725C1831C00BDB8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F8F69C25C1831D00BDB8D9 /* RuuviTempTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuuviTempTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8F6A025C1831D00BDB8D9 /* RuuviTempTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuuviTempTests.swift; sourceTree = "<group>"; };
+		23F8F6A225C1831D00BDB8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F8F6A725C1831D00BDB8D9 /* RuuviTempUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuuviTempUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8F6AB25C1831D00BDB8D9 /* RuuviTempUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuuviTempUITests.swift; sourceTree = "<group>"; };
+		23F8F6AD25C1831D00BDB8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23F8F68325C1831B00BDB8D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F8F69925C1831D00BDB8D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F8F6A425C1831D00BDB8D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23F8F67D25C1831B00BDB8D9 = {
+			isa = PBXGroup;
+			children = (
+				23F8F68825C1831B00BDB8D9 /* RuuviTemp */,
+				23F8F69F25C1831D00BDB8D9 /* RuuviTempTests */,
+				23F8F6AA25C1831D00BDB8D9 /* RuuviTempUITests */,
+				23F8F68725C1831B00BDB8D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23F8F68725C1831B00BDB8D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23F8F68625C1831B00BDB8D9 /* RuuviTemp.app */,
+				23F8F69C25C1831D00BDB8D9 /* RuuviTempTests.xctest */,
+				23F8F6A725C1831D00BDB8D9 /* RuuviTempUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23F8F68825C1831B00BDB8D9 /* RuuviTemp */ = {
+			isa = PBXGroup;
+			children = (
+				23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */,
+				23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */,
+				23F8F68D25C1831B00BDB8D9 /* ViewController.swift */,
+				23F8F68F25C1831B00BDB8D9 /* Main.storyboard */,
+				23F8F69225C1831C00BDB8D9 /* Assets.xcassets */,
+				23F8F69425C1831C00BDB8D9 /* LaunchScreen.storyboard */,
+				23F8F69725C1831C00BDB8D9 /* Info.plist */,
+			);
+			path = RuuviTemp;
+			sourceTree = "<group>";
+		};
+		23F8F69F25C1831D00BDB8D9 /* RuuviTempTests */ = {
+			isa = PBXGroup;
+			children = (
+				23F8F6A025C1831D00BDB8D9 /* RuuviTempTests.swift */,
+				23F8F6A225C1831D00BDB8D9 /* Info.plist */,
+			);
+			path = RuuviTempTests;
+			sourceTree = "<group>";
+		};
+		23F8F6AA25C1831D00BDB8D9 /* RuuviTempUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23F8F6AB25C1831D00BDB8D9 /* RuuviTempUITests.swift */,
+				23F8F6AD25C1831D00BDB8D9 /* Info.plist */,
+			);
+			path = RuuviTempUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23F8F68525C1831B00BDB8D9 /* RuuviTemp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F8F6B025C1831D00BDB8D9 /* Build configuration list for PBXNativeTarget "RuuviTemp" */;
+			buildPhases = (
+				23F8F68225C1831B00BDB8D9 /* Sources */,
+				23F8F68325C1831B00BDB8D9 /* Frameworks */,
+				23F8F68425C1831B00BDB8D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RuuviTemp;
+			productName = RuuviTemp;
+			productReference = 23F8F68625C1831B00BDB8D9 /* RuuviTemp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23F8F69B25C1831D00BDB8D9 /* RuuviTempTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F8F6B325C1831D00BDB8D9 /* Build configuration list for PBXNativeTarget "RuuviTempTests" */;
+			buildPhases = (
+				23F8F69825C1831D00BDB8D9 /* Sources */,
+				23F8F69925C1831D00BDB8D9 /* Frameworks */,
+				23F8F69A25C1831D00BDB8D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23F8F69E25C1831D00BDB8D9 /* PBXTargetDependency */,
+			);
+			name = RuuviTempTests;
+			productName = RuuviTempTests;
+			productReference = 23F8F69C25C1831D00BDB8D9 /* RuuviTempTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23F8F6A625C1831D00BDB8D9 /* RuuviTempUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F8F6B625C1831D00BDB8D9 /* Build configuration list for PBXNativeTarget "RuuviTempUITests" */;
+			buildPhases = (
+				23F8F6A325C1831D00BDB8D9 /* Sources */,
+				23F8F6A425C1831D00BDB8D9 /* Frameworks */,
+				23F8F6A525C1831D00BDB8D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23F8F6A925C1831D00BDB8D9 /* PBXTargetDependency */,
+			);
+			name = RuuviTempUITests;
+			productName = RuuviTempUITests;
+			productReference = 23F8F6A725C1831D00BDB8D9 /* RuuviTempUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23F8F67E25C1831B00BDB8D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					23F8F68525C1831B00BDB8D9 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					23F8F69B25C1831D00BDB8D9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 23F8F68525C1831B00BDB8D9;
+					};
+					23F8F6A625C1831D00BDB8D9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 23F8F68525C1831B00BDB8D9;
+					};
+				};
+			};
+			buildConfigurationList = 23F8F68125C1831B00BDB8D9 /* Build configuration list for PBXProject "RuuviTemp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23F8F67D25C1831B00BDB8D9;
+			productRefGroup = 23F8F68725C1831B00BDB8D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23F8F68525C1831B00BDB8D9 /* RuuviTemp */,
+				23F8F69B25C1831D00BDB8D9 /* RuuviTempTests */,
+				23F8F6A625C1831D00BDB8D9 /* RuuviTempUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23F8F68425C1831B00BDB8D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F8F69625C1831C00BDB8D9 /* LaunchScreen.storyboard in Resources */,
+				23F8F69325C1831C00BDB8D9 /* Assets.xcassets in Resources */,
+				23F8F69125C1831B00BDB8D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F8F69A25C1831D00BDB8D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F8F6A525C1831D00BDB8D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23F8F68225C1831B00BDB8D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F8F68E25C1831B00BDB8D9 /* ViewController.swift in Sources */,
+				23F8F68A25C1831B00BDB8D9 /* AppDelegate.swift in Sources */,
+				23F8F68C25C1831B00BDB8D9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F8F69825C1831D00BDB8D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F8F6A125C1831D00BDB8D9 /* RuuviTempTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F8F6A325C1831D00BDB8D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F8F6AC25C1831D00BDB8D9 /* RuuviTempUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23F8F69E25C1831D00BDB8D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F8F68525C1831B00BDB8D9 /* RuuviTemp */;
+			targetProxy = 23F8F69D25C1831D00BDB8D9 /* PBXContainerItemProxy */;
+		};
+		23F8F6A925C1831D00BDB8D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F8F68525C1831B00BDB8D9 /* RuuviTemp */;
+			targetProxy = 23F8F6A825C1831D00BDB8D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23F8F68F25C1831B00BDB8D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F8F69025C1831B00BDB8D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23F8F69425C1831C00BDB8D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F8F69525C1831C00BDB8D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23F8F6AE25C1831D00BDB8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23F8F6AF25C1831D00BDB8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23F8F6B125C1831D00BDB8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QKDK84L56;
+				INFOPLIST_FILE = RuuviTemp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikojoel.RuuviTemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23F8F6B225C1831D00BDB8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QKDK84L56;
+				INFOPLIST_FILE = RuuviTemp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikojoel.RuuviTemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23F8F6B425C1831D00BDB8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QKDK84L56;
+				INFOPLIST_FILE = RuuviTempTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikojoel.RuuviTempTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuuviTemp.app/RuuviTemp";
+			};
+			name = Debug;
+		};
+		23F8F6B525C1831D00BDB8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QKDK84L56;
+				INFOPLIST_FILE = RuuviTempTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikojoel.RuuviTempTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuuviTemp.app/RuuviTemp";
+			};
+			name = Release;
+		};
+		23F8F6B725C1831D00BDB8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QKDK84L56;
+				INFOPLIST_FILE = RuuviTempUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikojoel.RuuviTempUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RuuviTemp;
+			};
+			name = Debug;
+		};
+		23F8F6B825C1831D00BDB8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QKDK84L56;
+				INFOPLIST_FILE = RuuviTempUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikojoel.RuuviTempUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RuuviTemp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23F8F68125C1831B00BDB8D9 /* Build configuration list for PBXProject "RuuviTemp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F8F6AE25C1831D00BDB8D9 /* Debug */,
+				23F8F6AF25C1831D00BDB8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F8F6B025C1831D00BDB8D9 /* Build configuration list for PBXNativeTarget "RuuviTemp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F8F6B125C1831D00BDB8D9 /* Debug */,
+				23F8F6B225C1831D00BDB8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F8F6B325C1831D00BDB8D9 /* Build configuration list for PBXNativeTarget "RuuviTempTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F8F6B425C1831D00BDB8D9 /* Debug */,
+				23F8F6B525C1831D00BDB8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F8F6B625C1831D00BDB8D9 /* Build configuration list for PBXNativeTarget "RuuviTempUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F8F6B725C1831D00BDB8D9 /* Debug */,
+				23F8F6B825C1831D00BDB8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23F8F67E25C1831B00BDB8D9 /* Project object */;
+}
