@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2383E2F825C329DF0082C96E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383E2F725C329DF0082C96E /* TableViewCell.swift */; };
+		2383E30625C32E950082C96E /* RuuviTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383E30525C32E950082C96E /* RuuviTableViewController.swift */; };
+		23935DB725C565C20010D680 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DB625C565C20010D680 /* Keys.swift */; };
+		23935DBC25C567680010D680 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DBB25C567680010D680 /* WeatherViewController.swift */; };
+		23935DC525C568740010D680 /* WeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DC425C568740010D680 /* WeatherProvider.swift */; };
+		23935DCA25C5694A0010D680 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DC925C5694A0010D680 /* Weather.swift */; };
+		23C4D6F525C43D1400F0CE0B /* NamedRuuvi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4D6F425C43D1400F0CE0B /* NamedRuuvi.swift */; };
 		23F8F68A25C1831B00BDB8D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */; };
 		23F8F68C25C1831B00BDB8D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */; };
-		23F8F68E25C1831B00BDB8D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68D25C1831B00BDB8D9 /* ViewController.swift */; };
 		23F8F69125C1831B00BDB8D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F8F68F25C1831B00BDB8D9 /* Main.storyboard */; };
 		23F8F69325C1831C00BDB8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F8F69225C1831C00BDB8D9 /* Assets.xcassets */; };
 		23F8F69625C1831C00BDB8D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F8F69425C1831C00BDB8D9 /* LaunchScreen.storyboard */; };
 		23F8F6A125C1831D00BDB8D9 /* RuuviTempTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F6A025C1831D00BDB8D9 /* RuuviTempTests.swift */; };
 		23F8F6AC25C1831D00BDB8D9 /* RuuviTempUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F6AB25C1831D00BDB8D9 /* RuuviTempUITests.swift */; };
+		CE25CA396D59566AB13CAF86 /* Pods_RuuviTemp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4201DCB3AF1D93A6605C0F2A /* Pods_RuuviTemp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02AD736791D3DDB093F64E00 /* Pods-RuuviTempTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuuviTempTests.debug.xcconfig"; path = "Target Support Files/Pods-RuuviTempTests/Pods-RuuviTempTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2383E2F725C329DF0082C96E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2383E30525C32E950082C96E /* RuuviTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuuviTableViewController.swift; sourceTree = "<group>"; };
+		23935DB625C565C20010D680 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		23935DBB25C567680010D680 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		23935DC425C568740010D680 /* WeatherProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProvider.swift; sourceTree = "<group>"; };
+		23935DC925C5694A0010D680 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		23C4D6F425C43D1400F0CE0B /* NamedRuuvi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedRuuvi.swift; sourceTree = "<group>"; };
 		23F8F68625C1831B00BDB8D9 /* RuuviTemp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuuviTemp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23F8F68D25C1831B00BDB8D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23F8F69025C1831B00BDB8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23F8F69225C1831C00BDB8D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23F8F69525C1831C00BDB8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,10 @@
 		23F8F6A725C1831D00BDB8D9 /* RuuviTempUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuuviTempUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F8F6AB25C1831D00BDB8D9 /* RuuviTempUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuuviTempUITests.swift; sourceTree = "<group>"; };
 		23F8F6AD25C1831D00BDB8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281F92220D402C2D447A2790 /* Pods-RuuviTemp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuuviTemp.debug.xcconfig"; path = "Target Support Files/Pods-RuuviTemp/Pods-RuuviTemp.debug.xcconfig"; sourceTree = "<group>"; };
+		4201DCB3AF1D93A6605C0F2A /* Pods_RuuviTemp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RuuviTemp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693E7A7D14EB2767DE62246C /* Pods-RuuviTempTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuuviTempTests.release.xcconfig"; path = "Target Support Files/Pods-RuuviTempTests/Pods-RuuviTempTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF09714E1199B5B445C30FE3 /* Pods-RuuviTemp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuuviTemp.release.xcconfig"; path = "Target Support Files/Pods-RuuviTemp/Pods-RuuviTemp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE25CA396D59566AB13CAF86 /* Pods_RuuviTemp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +95,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23935DC025C567C80010D680 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				23935DC425C568740010D680 /* WeatherProvider.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		23C4D6F925C43E4100F0CE0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23C4D6F425C43D1400F0CE0B /* NamedRuuvi.swift */,
+				23935DC925C5694A0010D680 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23C4D6FA25C43E6700F0CE0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2383E30525C32E950082C96E /* RuuviTableViewController.swift */,
+				23935DBB25C567680010D680 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23C4D6FB25C43E7C00F0CE0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2383E2F725C329DF0082C96E /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		23F8F67D25C1831B00BDB8D9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +136,8 @@
 				23F8F69F25C1831D00BDB8D9 /* RuuviTempTests */,
 				23F8F6AA25C1831D00BDB8D9 /* RuuviTempUITests */,
 				23F8F68725C1831B00BDB8D9 /* Products */,
+				6C20BE57D0A0C5FDC0A51F10 /* Pods */,
+				8D18605AEFBF9C5CF4E8AE1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +154,13 @@
 		23F8F68825C1831B00BDB8D9 /* RuuviTemp */ = {
 			isa = PBXGroup;
 			children = (
+				23935DC025C567C80010D680 /* Service */,
+				23935DB625C565C20010D680 /* Keys.swift */,
+				23C4D6FB25C43E7C00F0CE0B /* Cell */,
+				23C4D6FA25C43E6700F0CE0B /* Controller */,
+				23C4D6F925C43E4100F0CE0B /* Model */,
 				23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */,
 				23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */,
-				23F8F68D25C1831B00BDB8D9 /* ViewController.swift */,
 				23F8F68F25C1831B00BDB8D9 /* Main.storyboard */,
 				23F8F69225C1831C00BDB8D9 /* Assets.xcassets */,
 				23F8F69425C1831C00BDB8D9 /* LaunchScreen.storyboard */,
@@ -128,6 +187,25 @@
 			path = RuuviTempUITests;
 			sourceTree = "<group>";
 		};
+		6C20BE57D0A0C5FDC0A51F10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				281F92220D402C2D447A2790 /* Pods-RuuviTemp.debug.xcconfig */,
+				CF09714E1199B5B445C30FE3 /* Pods-RuuviTemp.release.xcconfig */,
+				02AD736791D3DDB093F64E00 /* Pods-RuuviTempTests.debug.xcconfig */,
+				693E7A7D14EB2767DE62246C /* Pods-RuuviTempTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D18605AEFBF9C5CF4E8AE1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4201DCB3AF1D93A6605C0F2A /* Pods_RuuviTemp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23F8F6B025C1831D00BDB8D9 /* Build configuration list for PBXNativeTarget "RuuviTemp" */;
 			buildPhases = (
+				7FF79D318481B5405C025912 /* [CP] Check Pods Manifest.lock */,
 				23F8F68225C1831B00BDB8D9 /* Sources */,
 				23F8F68325C1831B00BDB8D9 /* Frameworks */,
 				23F8F68425C1831B00BDB8D9 /* Resources */,
+				7948408B4A2798E1DD43F3A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +333,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7948408B4A2798E1DD43F3A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RuuviTemp/Pods-RuuviTemp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RuuviTemp/Pods-RuuviTemp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RuuviTemp/Pods-RuuviTemp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FF79D318481B5405C025912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RuuviTemp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23F8F68225C1831B00BDB8D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F8F68E25C1831B00BDB8D9 /* ViewController.swift in Sources */,
+				2383E2F825C329DF0082C96E /* TableViewCell.swift in Sources */,
+				23935DB725C565C20010D680 /* Keys.swift in Sources */,
 				23F8F68A25C1831B00BDB8D9 /* AppDelegate.swift in Sources */,
+				23935DC525C568740010D680 /* WeatherProvider.swift in Sources */,
+				23935DCA25C5694A0010D680 /* Weather.swift in Sources */,
 				23F8F68C25C1831B00BDB8D9 /* SceneDelegate.swift in Sources */,
+				23935DBC25C567680010D680 /* WeatherViewController.swift in Sources */,
+				2383E30625C32E950082C96E /* RuuviTableViewController.swift in Sources */,
+				23C4D6F525C43D1400F0CE0B /* NamedRuuvi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +561,7 @@
 		};
 		23F8F6B125C1831D00BDB8D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281F92220D402C2D447A2790 /* Pods-RuuviTemp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +581,7 @@
 		};
 		23F8F6B225C1831D00BDB8D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF09714E1199B5B445C30FE3 /* Pods-RuuviTemp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
