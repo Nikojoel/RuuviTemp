@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235582A225CC5A6D00043D9C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235582A125CC5A6D00043D9C /* City.swift */; };
 		23819C2325C7FC83007AA9DB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23819C2225C7FC83007AA9DB /* Keys.swift */; };
 		2383E2F825C329DF0082C96E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383E2F725C329DF0082C96E /* TableViewCell.swift */; };
 		2383E30625C32E950082C96E /* RuuviTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383E30525C32E950082C96E /* RuuviTableViewController.swift */; };
 		23935DBC25C567680010D680 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DBB25C567680010D680 /* WeatherViewController.swift */; };
-		23935DC525C568740010D680 /* WeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DC425C568740010D680 /* WeatherProvider.swift */; };
+		23935DC525C568740010D680 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DC425C568740010D680 /* ApiService.swift */; };
 		23935DCA25C5694A0010D680 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23935DC925C5694A0010D680 /* Weather.swift */; };
-		23C4D6F525C43D1400F0CE0B /* NamedRuuvi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4D6F425C43D1400F0CE0B /* NamedRuuvi.swift */; };
 		23F8F68A25C1831B00BDB8D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */; };
 		23F8F68C25C1831B00BDB8D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */; };
 		23F8F69125C1831B00BDB8D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F8F68F25C1831B00BDB8D9 /* Main.storyboard */; };
@@ -43,13 +43,13 @@
 
 /* Begin PBXFileReference section */
 		02AD736791D3DDB093F64E00 /* Pods-RuuviTempTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuuviTempTests.debug.xcconfig"; path = "Target Support Files/Pods-RuuviTempTests/Pods-RuuviTempTests.debug.xcconfig"; sourceTree = "<group>"; };
+		235582A125CC5A6D00043D9C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		23819C2225C7FC83007AA9DB /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		2383E2F725C329DF0082C96E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2383E30525C32E950082C96E /* RuuviTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuuviTableViewController.swift; sourceTree = "<group>"; };
 		23935DBB25C567680010D680 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		23935DC425C568740010D680 /* WeatherProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProvider.swift; sourceTree = "<group>"; };
+		23935DC425C568740010D680 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		23935DC925C5694A0010D680 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		23C4D6F425C43D1400F0CE0B /* NamedRuuvi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedRuuvi.swift; sourceTree = "<group>"; };
 		23F8F68625C1831B00BDB8D9 /* RuuviTemp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuuviTemp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F8F68925C1831B00BDB8D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F8F68B25C1831B00BDB8D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,38 +104,38 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		23935DC025C567C80010D680 /* Service */ = {
+		23935DC025C567C80010D680 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				23935DC425C568740010D680 /* WeatherProvider.swift */,
+				23935DC425C568740010D680 /* ApiService.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		23C4D6F925C43E4100F0CE0B /* Model */ = {
+		23C4D6F925C43E4100F0CE0B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				23C4D6F425C43D1400F0CE0B /* NamedRuuvi.swift */,
 				23935DC925C5694A0010D680 /* Weather.swift */,
+				235582A125CC5A6D00043D9C /* City.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		23C4D6FA25C43E6700F0CE0B /* Controller */ = {
+		23C4D6FA25C43E6700F0CE0B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2383E30525C32E950082C96E /* RuuviTableViewController.swift */,
 				23935DBB25C567680010D680 /* WeatherViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		23C4D6FB25C43E7C00F0CE0B /* Cell */ = {
+		23C4D6FB25C43E7C00F0CE0B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				2383E2F725C329DF0082C96E /* TableViewCell.swift */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		23F8F67D25C1831B00BDB8D9 = {
@@ -164,10 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				23819C2A25C7FCC5007AA9DB /* Application */,
-				23935DC025C567C80010D680 /* Service */,
-				23C4D6FB25C43E7C00F0CE0B /* Cell */,
-				23C4D6FA25C43E6700F0CE0B /* Controller */,
-				23C4D6F925C43E4100F0CE0B /* Model */,
+				23935DC025C567C80010D680 /* Services */,
+				23C4D6FB25C43E7C00F0CE0B /* Cells */,
+				23C4D6FA25C43E6700F0CE0B /* Controllers */,
+				23C4D6F925C43E4100F0CE0B /* Models */,
 				23F8F68F25C1831B00BDB8D9 /* Main.storyboard */,
 				23F8F69225C1831C00BDB8D9 /* Assets.xcassets */,
 				23F8F69425C1831C00BDB8D9 /* LaunchScreen.storyboard */,
@@ -390,13 +390,13 @@
 			files = (
 				2383E2F825C329DF0082C96E /* TableViewCell.swift in Sources */,
 				23F8F68A25C1831B00BDB8D9 /* AppDelegate.swift in Sources */,
-				23935DC525C568740010D680 /* WeatherProvider.swift in Sources */,
+				235582A225CC5A6D00043D9C /* City.swift in Sources */,
+				23935DC525C568740010D680 /* ApiService.swift in Sources */,
 				23935DCA25C5694A0010D680 /* Weather.swift in Sources */,
 				23F8F68C25C1831B00BDB8D9 /* SceneDelegate.swift in Sources */,
 				23935DBC25C567680010D680 /* WeatherViewController.swift in Sources */,
 				2383E30625C32E950082C96E /* RuuviTableViewController.swift in Sources */,
 				23819C2325C7FC83007AA9DB /* Keys.swift in Sources */,
-				23C4D6F525C43D1400F0CE0B /* NamedRuuvi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

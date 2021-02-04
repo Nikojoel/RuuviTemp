@@ -23,11 +23,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjY-BU-yDo">
+                                <rect key="frame" x="0.0" y="511" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bo7-05-rPQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Weather Data" id="qdF-Jm-vyk"/>
+                    <connections>
+                        <outlet property="pickerView" destination="xjY-BU-yDo" id="20G-AW-y4G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuC-4n-lzn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,6 +112,27 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voltage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mc3-e3-HX9">
+                                            <rect key="frame" x="293" y="11" width="58" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-eB-I1M">
+                                            <rect key="frame" x="293" y="50" width="81" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76S-0G-cKe">
+                                            <rect key="frame" x="293" y="90" width="33" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -112,10 +140,13 @@
                                     <outlet property="accY" destination="0Aw-hO-x7P" id="sDd-OX-hEq"/>
                                     <outlet property="accZ" destination="Sv8-Yg-TKk" id="sLQ-mc-INw"/>
                                     <outlet property="humid" destination="73h-fM-2Ob" id="G94-3L-fIS"/>
+                                    <outlet property="mac" destination="76S-0G-cKe" id="Lb5-OG-JbR"/>
+                                    <outlet property="mvnt" destination="gSm-eB-I1M" id="1G3-Lt-5X3"/>
                                     <outlet property="name" destination="JHo-qM-jFZ" id="1Vs-Pb-TS8"/>
                                     <outlet property="pres" destination="eVu-GU-6pH" id="Cjo-pu-Eqq"/>
                                     <outlet property="rssi" destination="czX-V9-ERq" id="QE3-cP-8UF"/>
                                     <outlet property="temp" destination="X1M-b5-9MK" id="EzN-hN-1Ax"/>
+                                    <outlet property="voltage" destination="Mc3-e3-HX9" id="UGD-aI-1oY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

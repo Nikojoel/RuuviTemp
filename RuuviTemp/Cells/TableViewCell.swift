@@ -17,6 +17,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var accY: UILabel!
     @IBOutlet weak var accZ: UILabel!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var mac: UILabel!
+    @IBOutlet weak var mvnt: UILabel!
+    @IBOutlet weak var voltage: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
