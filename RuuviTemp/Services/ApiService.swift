@@ -1,5 +1,5 @@
 //
-//  WeatherProvider.swift
+//  ApiService.swift
 //  RuuviTemp
 //
 //  Created by Niko Holopainen on 30.1.2021.
@@ -11,11 +11,7 @@ import Alamofire
 
 class ApiService {
     
-    private let headers: HTTPHeaders = [
-        "x-rapidapi-key": Keys.rapidKey.rawValue,
-        "x-rapidapi-host": Keys.rapidHost.rawValue,
-        "useQueryString": "true"
-    ]
+    let body = ["country" : "Finland"]
     
     enum failureReason: Int, Error {
         case badRequest = 400
@@ -56,9 +52,10 @@ class ApiService {
     
     func getCities() -> Observable<City> {
         return Observable.create { observer -> Disposable in
-            AF.request("https://wft-geo-db.p.rapidapi.com/v1/geo/cities?countryIds=FI", headers: self.headers)
+            AF.request("https://countriesnow.space/api/v0.1/countries/cities", method: .post, parameters: self.body, encoding: URLEncoding.httpBody)
                 .validate()
                 .responseJSON { response in
+                    print(response)
                     switch response.result {
                     case .success:
                         guard let data = response.data else {
