@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2354280025D4183700C99F64 /* WeatherImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235427FF25D4183700C99F64 /* WeatherImage.swift */; };
 		235582A225CC5A6D00043D9C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235582A125CC5A6D00043D9C /* City.swift */; };
 		236AE29125D3C11D00A53FD4 /* Img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236AE29025D3C11D00A53FD4 /* Img.xcassets */; };
 		236AE29C25D3F2E200A53FD4 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236AE29B25D3F2E200A53FD4 /* WeatherCell.swift */; };
@@ -45,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		02AD736791D3DDB093F64E00 /* Pods-RuuviTempTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuuviTempTests.debug.xcconfig"; path = "Target Support Files/Pods-RuuviTempTests/Pods-RuuviTempTests.debug.xcconfig"; sourceTree = "<group>"; };
-		235427FF25D4183700C99F64 /* WeatherImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherImage.swift; sourceTree = "<group>"; };
 		235582A125CC5A6D00043D9C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		236AE29025D3C11D00A53FD4 /* Img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Img.xcassets; sourceTree = "<group>"; };
 		236AE29B25D3F2E200A53FD4 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 			children = (
 				23935DC925C5694A0010D680 /* Weather.swift */,
 				235582A125CC5A6D00043D9C /* City.swift */,
-				235427FF25D4183700C99F64 /* WeatherImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,7 +395,6 @@
 				23F8F68A25C1831B00BDB8D9 /* AppDelegate.swift in Sources */,
 				236AE29C25D3F2E200A53FD4 /* WeatherCell.swift in Sources */,
 				235582A225CC5A6D00043D9C /* City.swift in Sources */,
-				2354280025D4183700C99F64 /* WeatherImage.swift in Sources */,
 				23935DC525C568740010D680 /* ApiService.swift in Sources */,
 				23935DCA25C5694A0010D680 /* Weather.swift in Sources */,
 				23F8F68C25C1831B00BDB8D9 /* SceneDelegate.swift in Sources */,
