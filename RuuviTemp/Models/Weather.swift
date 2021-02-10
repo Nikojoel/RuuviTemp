@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Weather: Codable {
+struct Weather: Codable, Hashable {
+    static func == (lhs: Weather, rhs: Weather) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
     var coord: [String:Double]
     var weather: [WeatherType]
     var main: MainInfo
@@ -17,13 +21,13 @@ struct Weather: Codable {
     var name: String
 }
 
-struct WeatherType: Codable {
+struct WeatherType: Codable, Hashable {
     var main: String
     var description: String
     var icon: String
 }
 
-struct MainInfo: Codable {
+struct MainInfo: Codable, Hashable {
     var temp: Double
     var temp_min: Double
     var temp_max: Double
@@ -32,7 +36,7 @@ struct MainInfo: Codable {
     var humidity: Double
 }
 
-struct System: Codable {
+struct System: Codable, Hashable {
     var country: String
     var sunrise: Int
     var sunset: Int

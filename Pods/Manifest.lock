@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (5.4.1)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
   - BTKit (0.0.21)
   - RxCocoa (6.0.0):
     - RxRelay (= 6.0.0)
@@ -9,14 +11,16 @@ PODS:
   - RxSwift (6.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
-  - BTKit (~> 0.0.21)
-  - RxCocoa (= 6.0.0)
-  - RxSwift (= 6.0.0)
+  - Alamofire
+  - AlamofireImage
+  - BTKit
+  - RxCocoa
+  - RxSwift
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
     - BTKit
     - RxCocoa
     - RxRelay
@@ -24,11 +28,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   BTKit: 771925b4db5c14e2a241cd976d0cc24d27b507f8
   RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
   RxRelay: 8d593be109c06ea850df027351beba614b012ffb
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
 
-PODFILE CHECKSUM: 3057cadc17ad9ab8def28c326c598e074c3cc524
+PODFILE CHECKSUM: d7154b38171df7c1922f68a5fc4058b52c1dbdc1
 
 COCOAPODS: 1.10.1

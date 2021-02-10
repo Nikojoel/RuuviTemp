@@ -8,47 +8,59 @@
 import Foundation
 import UIKit
 import RxSwift
+import AlamofireImage
 
-class WeatherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
-    @IBOutlet weak var desc: UILabel!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var sSet: UILabel!
-    @IBOutlet weak var sRise: UILabel!
-    @IBOutlet weak var dir: UILabel!
-    @IBOutlet weak var wind: UILabel!
-    @IBOutlet weak var visib: UILabel!
-    @IBOutlet weak var humid: UILabel!
-    @IBOutlet weak var pres: UILabel!
-    @IBOutlet weak var low: UILabel!
-    @IBOutlet weak var high: UILabel!
-    @IBOutlet weak var feels: UILabel!
-    @IBOutlet weak var temp: UILabel!
+class WeatherViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var pickerView: UIPickerView!
-    @IBOutlet weak var progBar: UIActivityIndicatorView!
     
     private let service = ApiService()
     private let disposeBag = DisposeBag()
     private let calendar = Calendar.current
-    private var data: [String] = []
-    private var cities: [City] = []
+    private var data = [String]()
+    private var cities = [City]()
+    private var weathers = [Weather]()
+    private var weatherSet = Set<Weather>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerView.delegate = self
-        progBar.startAnimating()
-        
         service.getCities().subscribe(
             onNext: { city in
                 self.data.append(contentsOf: city.data)
                 self.pickerView.reloadAllComponents()
-                self.progBar.stopAnimating()
-                self.progBar.hidesWhenStopped = true
             },
             onError: { error in
                 print(error)
             }
         ).disposed(by: disposeBag)
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return weathers.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WeatherCell
+        let data = weathers[indexPath.row]
+        guard let dlURL = URL(string: "https://openweathermap.org/img/wn/\(data.weather[0].icon)@2x.png") else { return cell }
+        
+        print(data)
+        cell.temp.text = "\(data.main.temp) °C"
+        cell.name.text = data.name
+        cell.high.text = "High of \(data.main.temp_max) °C"
+        cell.low.text = "Low of \(data.main.temp_min) °C"
+        cell.feels.text = "Feels like \(data.main.feels_like) °C"
+        cell.humid.text = "\(data.main.humidity) %"
+        cell.pres.text = "\(data.main.pressure) hPa"
+        cell.visib.text = "\(data.visibility / 1000) km"
+        cell.wind.text = "\(data.wind["speed"] ?? 0) m/s"
+        cell.dir.text = "\(WindDirection(data.wind["deg"] ?? 0))"
+        cell.sSet.text = getDate(value: data.sys.sunset)
+        cell.sRise.text = getDate(value: data.sys.sunrise)
+        cell.desc.text = data.weather[0].description
+        cell.img.af.setImage(withURL: dlURL)
+        return cell
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -62,12 +74,12 @@ class WeatherViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         service.getWeather(city: data[row]).subscribe(
             onNext: { weather in
-                self.updateWeather(weather: weather)
+                self.weatherSet.update(with: weather)
+                self.weathers = self.weatherSet.sorted(by: { $0.name < $1.name})
+                self.tableView.reloadData()
             },
             onError: { error in
                 print(error)
-                self.temp.text = "Not found"
-                self.name.text = "--"
             }
         ).disposed(by: disposeBag)
     }
@@ -80,23 +92,6 @@ class WeatherViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         let hours = self.calendar.dateComponents([.hour], from: Date(timeIntervalSince1970: TimeInterval(value))).hour
         let minutes = self.calendar.dateComponents([.minute], from: Date(timeIntervalSince1970: TimeInterval(value))).minute
         return "\(hours ?? 0):\(minutes ?? 0)"
-    }
-    
-    func updateWeather(weather: Weather) {
-        print(weather)
-        temp.text = "\(weather.main.temp) °C"
-        name.text = weather.name
-        high.text = "\(weather.main.temp_max) °C"
-        low.text = "\(weather.main.temp_min) °C"
-        feels.text = "\(weather.main.feels_like) °C"
-        humid.text = "\(weather.main.humidity) %"
-        pres.text = "\(weather.main.pressure) hPa"
-        visib.text = "\(weather.visibility / 1000) km"
-        wind.text = "\(weather.wind["speed"] ?? 0) m/s"
-        dir.text = "\(WindDirection(weather.wind["deg"] ?? 0))"
-        sSet.text = getDate(value: weather.sys.sunset)
-        sRise.text = getDate(value: weather.sys.sunrise)
-        desc.text = weather.weather[0].description
     }
 }
 

@@ -11,7 +11,8 @@ import BTKit
 class RuuviTableViewController: UITableViewController {
     private var ruuviTagsSet = Set<RuuviTag>()
     private var ruuviTags = [RuuviTag]()
-    let defaults = UserDefaults.standard
+    private let defaults = UserDefaults.standard
+    private let ruuviMax = 3.646
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,19 +41,14 @@ class RuuviTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RuuviCell
         let tag = ruuviTags[indexPath.row]
         cell.temp.text = "\(tag.celsius ?? 0) °C"
-        cell.humid.text = "\(tag.humidity ?? 0) %"
-        cell.pres.text = "\(tag.pressure ?? 0) hPa"
+        cell.humid.text = "\(String(format: "%.2f", tag.humidity ?? 0)) %"
+        cell.pres.text = "\(String(format: "%.2f", tag.pressure ?? 00)) hPa"
         cell.rssi.text = "\(tag.rssi) dBM"
-        cell.accX.text = "\(tag.accelerationX ?? 0) G"
-        cell.accY.text = "\(tag.accelerationY ?? 0) G"
-        cell.accZ.text = "\(tag.accelerationZ ?? 0) G"
         cell.name.text = "\(self.defaults.string(forKey: tag.mac ?? "") ?? "--")"
-        cell.mac.text = "\(tag.mac ?? "--")"
-        cell.voltage.text = "\(tag.voltage ?? 0) V"
-        cell.mvnt.text = "\(tag.movementCounter ?? 0)"
+        cell.voltage.text = "\(String(format: "%.1f", tag.voltage! / self.ruuviMax * 100)) %"
         return cell
     }
     

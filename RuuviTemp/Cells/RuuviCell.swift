@@ -1,5 +1,5 @@
 //
-//  TableViewCell.swift
+//  RuuviCell.swift
 //  RuuviTemp
 //
 //  Created by Niko Holopainen on 28.1.2021.
@@ -7,18 +7,13 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class RuuviCell: UITableViewCell {
     
     @IBOutlet weak var temp: UILabel! 
     @IBOutlet weak var humid: UILabel!
     @IBOutlet weak var pres: UILabel!
     @IBOutlet weak var rssi: UILabel!
-    @IBOutlet weak var accX: UILabel!
-    @IBOutlet weak var accY: UILabel!
-    @IBOutlet weak var accZ: UILabel!
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var mac: UILabel!
-    @IBOutlet weak var mvnt: UILabel!
     @IBOutlet weak var voltage: UILabel!
     
     override func awakeFromNib() {
