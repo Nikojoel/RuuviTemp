@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		235582A225CC5A6D00043D9C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235582A125CC5A6D00043D9C /* City.swift */; };
-		236AE29125D3C11D00A53FD4 /* Img.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236AE29025D3C11D00A53FD4 /* Img.xcassets */; };
+		236AE29125D3C11D00A53FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236AE29025D3C11D00A53FD4 /* Assets.xcassets */; };
 		236AE29C25D3F2E200A53FD4 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236AE29B25D3F2E200A53FD4 /* WeatherCell.swift */; };
 		23819C2325C7FC83007AA9DB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23819C2225C7FC83007AA9DB /* Keys.swift */; };
 		2383E2F825C329DF0082C96E /* RuuviCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383E2F725C329DF0082C96E /* RuuviCell.swift */; };
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		02AD736791D3DDB093F64E00 /* Pods-RuuviTempTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RuuviTempTests.debug.xcconfig"; path = "Target Support Files/Pods-RuuviTempTests/Pods-RuuviTempTests.debug.xcconfig"; sourceTree = "<group>"; };
 		235582A125CC5A6D00043D9C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		236AE29025D3C11D00A53FD4 /* Img.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Img.xcassets; sourceTree = "<group>"; };
+		236AE29025D3C11D00A53FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236AE29B25D3F2E200A53FD4 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		23819C2225C7FC83007AA9DB /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		2383E2F725C329DF0082C96E /* RuuviCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuuviCell.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 				23C4D6FA25C43E6700F0CE0B /* Controllers */,
 				23C4D6F925C43E4100F0CE0B /* Models */,
 				23F8F68F25C1831B00BDB8D9 /* Main.storyboard */,
-				236AE29025D3C11D00A53FD4 /* Img.xcassets */,
+				236AE29025D3C11D00A53FD4 /* Assets.xcassets */,
 				23F8F69425C1831C00BDB8D9 /* LaunchScreen.storyboard */,
 				23F8F69725C1831C00BDB8D9 /* Info.plist */,
 				23819C2225C7FC83007AA9DB /* Keys.swift */,
@@ -324,7 +324,7 @@
 			files = (
 				23F8F69625C1831C00BDB8D9 /* LaunchScreen.storyboard in Resources */,
 				23F8F69125C1831B00BDB8D9 /* Main.storyboard in Resources */,
-				236AE29125D3C11D00A53FD4 /* Img.xcassets in Resources */,
+				236AE29125D3C11D00A53FD4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
