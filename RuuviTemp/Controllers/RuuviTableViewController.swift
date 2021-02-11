@@ -14,8 +14,14 @@ class RuuviTableViewController: UITableViewController {
     private let defaults = UserDefaults.standard
     private let ruuviMax = 3.646
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let img = UIImageView(image: UIImage(named: "1"))
+        img.frame = self.tableView.frame
+        self.tableView.backgroundView = img
+        
         BTKit.scanner.scan(self) { (observer, device) in
             if let ruuviTag = device.ruuvi?.tag {
                 observer.ruuviTagsSet.update(with: ruuviTag)
@@ -25,6 +31,15 @@ class RuuviTableViewController: UITableViewController {
             self.ruuviTags = self.ruuviTagsSet.sorted(by: { $0.celsius ?? 1 < $1.celsius ?? 0 })
             self.tableView.reloadData()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Make the navigation bar background clear
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,7 +58,9 @@ class RuuviTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RuuviCell
         let tag = ruuviTags[indexPath.row]
-        cell.temp.text = "\(tag.celsius ?? 0) °C"
+        cell.backgroundColor = UIColor.clear
+        
+        cell.temp.text = "\(tag.celsius ?? 0)"
         cell.humid.text = "\(String(format: "%.2f", tag.humidity ?? 0)) %"
         cell.pres.text = "\(String(format: "%.2f", tag.pressure ?? 00)) hPa"
         cell.rssi.text = "\(tag.rssi) dBM"

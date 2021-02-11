@@ -8,6 +8,5 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod ‘BTKit’
 pod 'Alamofire'
-pod 'AlamofireImage'
 
 end

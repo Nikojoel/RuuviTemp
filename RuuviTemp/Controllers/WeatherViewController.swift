@@ -35,6 +35,15 @@ class WeatherViewController: UITableViewController, UIPickerViewDelegate, UIPick
         ).disposed(by: disposeBag)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Make the navigation bar background clear
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+    }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return weathers.count
@@ -43,7 +52,12 @@ class WeatherViewController: UITableViewController, UIPickerViewDelegate, UIPick
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WeatherCell
         let data = weathers[indexPath.row]
-        guard let dlURL = URL(string: "https://openweathermap.org/img/wn/\(data.weather[0].icon)@2x.png") else { return cell }
+        let icon = getWeatherType(type: data.weather[0].main)
+        let img = getWeatherImage(type: data.weather[0].main)
+        
+        let bg = UIImageView(image: UIImage(named: img))
+        bg.frame = cell.frame
+        cell.backgroundView = bg
         
         print(data)
         cell.temp.text = "\(data.main.temp) °C"
@@ -59,7 +73,7 @@ class WeatherViewController: UITableViewController, UIPickerViewDelegate, UIPick
         cell.sSet.text = getDate(value: data.sys.sunset)
         cell.sRise.text = getDate(value: data.sys.sunrise)
         cell.desc.text = data.weather[0].description
-        cell.img.af.setImage(withURL: dlURL)
+        cell.img.image = UIImage(systemName: icon)
         return cell
     }
     
@@ -76,6 +90,7 @@ class WeatherViewController: UITableViewController, UIPickerViewDelegate, UIPick
             onNext: { weather in
                 self.weatherSet.update(with: weather)
                 self.weathers = self.weatherSet.sorted(by: { $0.name < $1.name})
+                self.tableView.setContentOffset(CGPoint(x: 0, y: CGFloat.greatestFiniteMagnitude), animated: true)
                 self.tableView.reloadData()
             },
             onError: { error in
@@ -92,6 +107,40 @@ class WeatherViewController: UITableViewController, UIPickerViewDelegate, UIPick
         let hours = self.calendar.dateComponents([.hour], from: Date(timeIntervalSince1970: TimeInterval(value))).hour
         let minutes = self.calendar.dateComponents([.minute], from: Date(timeIntervalSince1970: TimeInterval(value))).minute
         return "\(hours ?? 0):\(minutes ?? 0)"
+    }
+    
+    func getWeatherImage(type: String) -> String {
+        switch type {
+        case "Clear":
+            return "1"
+        case "Clouds":
+            return "2"
+        case "Snow":
+            return "3"
+        case "Rain":
+            return "4"
+        default:
+            return "1"
+        }
+    }
+    
+    func getWeatherType(type: String) -> String {
+        switch type {
+        case "Clouds":
+            return "cloud.fill"
+        case "Clear":
+            return "sun.max.fill"
+        case "Snow":
+            return "snow"
+        case "Rain":
+            return "cloud.rain.fill"
+        case "Drizzle":
+            return "cloud.drizzle.fill"
+        case "Thunderstorm":
+            return "cloud.bolt.fill"
+        default:
+            return "xmark.icloud.fill"
+        }
     }
 }
 
